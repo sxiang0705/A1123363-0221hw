@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迎新活動報名表</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            font-size: 40px;
+            color:rgb(96, 75, 214);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(223, 233, 243);
+            text-align: center; /* 讓內容置中 */
+        }
+        .banner1{
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover; 
+        }
+        .banner2{
+            width: 25%;
+            max-height: 200px;
+            object-fit: cover; 
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table{
+            margin: 50px auto; /* 讓表格水平置中*/
+            border-collapse: collapse; /* 讓表格邊框合併 */
+            width: 80%; /* 設定寬度 */
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .table-img {
+            width: 300px; /* 設定適當大小 */
+            height: auto; /* 保持圖片比例 */
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <img src="https://www.nuk.edu.tw/var/file/0/1000/randimg/mobileadv_972_4230459_86501.jpg" alt="迎新活動橫幅" class="banner1">
+    <hr>
+    
+    <TABLE BORDER>
+        <TR>
+            <TH>選項</TH>
+            <TH>方案一 「資管 中 To DIE」</TH>
+            <TH>方案二 「資管 酒局下半延長賽」</TH>
+        </TR>
+        <TR>
+            <TD>
+                <p>時間日期</p>
+            </TD>
+            <TD>
+                <p>3/1~3/2</p>
+            </TD>
+            <TD>
+                <p>3/1~無中止</p>
+            </TD>
+        </TR>
+        <TR>
+            <TD>
+                <p>活動地點</p>
+            </TD>
+            <TD>
+                <p>高大棋牌館</p>
+            </TD>
+            <TD>
+                <p>管理學院508</p>
+            </TD>
+        </TR>
+        <TR>
+            <TD>
+                <p>收費</p>
+            </TD>
+            <TD>
+                <p>$2000</p>
+            </TD>
+            <TD>
+                <p>$2500</p>
+            </TD>
+        </TR>
+    </TABLE>
+    
+    <h2>迎新活動報名表</h2>
+    <form action="final.html" method="POST">
+        <!--點擊轉到 final.html 先不存資料-->>
+        <!-- 姓名 -->
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- 電子郵件 -->
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- 性別選擇 -->
+        <label>性別：</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">男</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">女</label>
+
+        <!-- 方案選擇 -->
+        <label for="stay">選擇方案</label>
+        <select id="stay" name="stay">
+            <option value="case1">資管 中 To DIE $2000</option>
+            <option value="case2">資管 酒局下半延長賽 $2500</option>
+        </select>
+
+        <!-- 其他需求 -->
+        <label for="message">其他需求：</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <!-- 提交按鈕 -->
+        <button type="submit">提交報名</button>
+    </form>
+    <h1>返回主頁 ⬇️</h1>
+    <a href="index.html">
+        <img src="https://png.pngtree.com/png-clipart/20220924/original/pngtree-click-me-3d-button-web-png-image_8629888.png" alt="返回主頁" class="banner2">
+    </a>
+</body>
+</html>
